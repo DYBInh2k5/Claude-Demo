@@ -20,6 +20,8 @@ copy .env.example .env
 
 ## Chạy dự án
 
+Chạy CLI:
+
 ```bash
 npm start
 ```
@@ -30,7 +32,19 @@ Hoặc gửi prompt riêng:
 node index.js "Xin chào Claude, hãy giúp tôi viết một đoạn văn ngắn về AI."
 ```
 
+Chạy web app:
+
+```bash
+npm run start:web
+```
+
+Sau đó mở trình duyệt tại:
+
+```bash
+http://localhost:3000
+```
+
 ## Lưu ý
 
 - Không commit file `.env` chứa key thật lên git.
-- Nếu bạn muốn dùng model khác, chỉnh `MODEL` trong `index.js`.
+- Nếu bạn muốn dùng model khác, chỉnh `MODEL` trong `index.js` hoặc `server.js`.
